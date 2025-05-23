@@ -1,5 +1,50 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
-
-body{
-    background: white;
-}
+body {
+      margin: 0;
+      background: linear-gradient(to bottom, #0b6623, #006400);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      font-family: 'Georgia', serif;
+    }
+    .carta {
+      background: white;
+      border-radius: 15px;
+      width: 200px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      font-size: 3rem;
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .carta:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+    }
+    .simbolo-arriba, .simbolo-abajo {
+      font-size: 1.5rem;
+    }
+    .simbolo-arriba {
+      align-self: flex-start;
+    }
+    .simbolo-abajo {
+      align-self: flex-end;
+      transform: rotate(180deg);
+    }
+    .valor-carta {
+      font-size: 3rem;
+      text-align: center;
+    }
+    .heart, .diamond {
+      color: red;
+    }
+    .spade, .club {
+      color: black;
+    }
